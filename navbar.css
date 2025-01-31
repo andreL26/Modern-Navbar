@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=sans-serif:wght@300;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+body {
+    background-image: url(gambar/japan-city-street-purple-aesthetic-5gie0uq00n6a4bfv.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 50px;
+}
+
+nav {
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    backdrop-filter: blur(25px);
+    position: fixed;
+    width: 100%;
+    height: 60px; 
+}
+
+.logo img {
+    width: 90px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h2 {
+    font-size: 25px;
+    font-weight: 600;
+    height: 25px;
+    margin: -20px;
+}
+
+.navbar {
+    display: flex;
+    margin: 70px;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.navbar li {
+    list-style-type: none;
+    margin: 40px;
+    padding: 15px;
+    font-size: 20px;
+    height: 55px;
+}
+
+.navbar span {
+    padding: 11px;
+    margin: -35px;
+    height: 55px;
+    width: 5px;
+    font-size: 28px;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar > li>a:hover {
+    color: rgb(175, 9, 153);
+}
+
+.cexbox {
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media screen and (max-width: 952px) {
+    .navbar {
+        position: absolute;
+        top: -10px;
+        flex-direction: column;
+        gap: 5px;
+        background: rgba(0, 0, 0, 0.65);
+        width: 100%;
+        right: -70px;
+        padding: 100px 0px;
+        transition: 500ms;
+        align-items: center;
+    }
+
+    input:checked ~ .navbar {
+        height: 100vh;
+        padding: 50px 0px;
+    }
+
+    #checkb {
+        display: block;
+        width:60px;
+    }
+
+    .cekbox {
+        width:  60px;
+        height: 60px;
+        position: absolute;
+    }
+
+    .navbar span {
+        height: 10px;
+        width: 9rem;
+        font-size: 28px;
+        padding: 60px;
+        margin: -70px;
+    }
+}
